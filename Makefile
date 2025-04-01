@@ -12,3 +12,4 @@ game: game.c
 clean:
 	rm -f server game *.o server.log
 
+

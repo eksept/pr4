@@ -28,6 +28,7 @@ void interactive_mode(int sock) {
     }
 }
 
+
 void automatic_mode(int sock) {
     char buffer[BUFFER_SIZE];
     int low = 1, high = 100, guess;
