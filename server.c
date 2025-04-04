@@ -95,11 +95,7 @@ int main() {
             continue;
         }
 
-        if (fork() == 0) {
-            close(server_sock);
-            handle_client(client_sock, client_addr);
-            exit(0);
-        }
+        handle_client(client_sock, client_addr);
         close(client_sock);
     }
 
